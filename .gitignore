@@ -5,3 +5,4 @@ UserSettings
 Assembly-CSharp.csproj
 *.csproj
 xlab_test_1.sln
+.vscode
