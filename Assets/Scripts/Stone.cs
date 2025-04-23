@@ -7,13 +7,16 @@ namespace Golf
     public class Stone : MonoBehaviour
     {
         public bool isAffect = false;
-        public static event System.Action onCollisionStone;
-        private void OnCollisionEnter(Collision collision)
+
+            private void OnCollisionEnter(Collision collision)
         {
-            if (collision.transform.TryGetComponent(out Stone other))
+            Debug.Log("Stone collision with: " + collision.gameObject.name); // Лог
+            
+            if (collision.gameObject.TryGetComponent(out Stone otherStone))
             {
-                if (!other.isAffect)
+                if (!isAffect) // Если этот камень ещё не был задет
                 {
+                    Debug.Log("Stones collided! Triggering Game Over."); // Лог
                     GameEvents.CollisionStonesInvoke(collision);
                 }
             }
