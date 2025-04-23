@@ -8,7 +8,7 @@ namespace Golf
     {
         public GameObject[] prefab;
 
-        public void Spawm()
+        public void Spawn()
         {
             Debug.Log("Try spawn!");
 
@@ -33,7 +33,7 @@ namespace Golf
             }
 
             int index = Random.Range(0, prefab.Length);
-            return prefab[index];
+            return prefab[index]; 
         }
 
 
