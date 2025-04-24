@@ -45,7 +45,7 @@ namespace Golf
 
             // Поворачиваем палку
             Quaternion rot = stick.localRotation;
-            Quaternion toRot = Quaternion.Euler(0, 0, m_isDown ? range : -range);
+            Quaternion toRot = Quaternion.Euler(0, 0, m_isDown ? -range : range);
             rot = Quaternion.RotateTowards(rot, toRot, speed * Time.deltaTime);
             stick.localRotation = rot;
         }
