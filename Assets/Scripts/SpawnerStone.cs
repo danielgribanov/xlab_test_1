@@ -8,7 +8,7 @@ namespace Golf
     {
         public GameObject[] prefab;
 
-        public void Spawn()
+        public GameObject Spawn()
         {
             Debug.Log("Try spawn!");
 
@@ -17,10 +17,10 @@ namespace Golf
             if (prefab == null)
             {
                 Debug.LogError("Spawner - prefab == null");
-                return;
+                return null;
             } 
 
-            Instantiate(prefab, transform.position, Quaternion.identity);
+            return Instantiate(prefab, transform.position, Quaternion.identity);
 
         }
 
