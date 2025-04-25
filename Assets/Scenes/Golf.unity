@@ -15511,7 +15511,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 254373352979940544}
+        m_TargetAssemblyTypeName: Golf.Player, Assembly-CSharp
+        m_MethodName: OnCollisionStick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1835501418
 GameObject:
   m_ObjectHideFlags: 0
@@ -20306,42 +20318,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7215185675755575881, guid: 1b05cf212e74faf488cab63e7b2b7f34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8264705150509312692}
-    - targetCorrespondingSourceObject: {fileID: 7561293688979018642, guid: 1b05cf212e74faf488cab63e7b2b7f34, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6981103173008832581}
   m_SourcePrefab: {fileID: 100100000, guid: 1b05cf212e74faf488cab63e7b2b7f34, type: 3}
 --- !u!1 &6981103173008832579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7215185675755575881, guid: 1b05cf212e74faf488cab63e7b2b7f34, type: 3}
   m_PrefabInstance: {fileID: 6981103173008832578}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6981103173008832580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7561293688979018642, guid: 1b05cf212e74faf488cab63e7b2b7f34, type: 3}
-  m_PrefabInstance: {fileID: 6981103173008832578}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &6981103173008832581
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6981103173008832580}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 429011407669386205, guid: 547e639ba758128418df073edb88e5b4, type: 3}
 --- !u!4 &8264705150509312689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8028420087202808051, guid: 1b05cf212e74faf488cab63e7b2b7f34, type: 3}
@@ -20381,10 +20363,10 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6981103173008832579}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 634bf63c36e003e439d3f9f9a19a11f5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
