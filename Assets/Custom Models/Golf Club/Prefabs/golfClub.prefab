@@ -52,7 +52,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: golfClub
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2290133662850015914, guid: 547e639ba758128418df073edb88e5b4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
